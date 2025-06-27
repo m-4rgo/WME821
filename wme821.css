@@ -98,7 +98,7 @@ a:hover, a:focus {
 #navigation a:hover, #navigation a:focus, a.back-button:hover, a.back-button:focus {
 	color: var(--gold-accent);
 	text-decoration: none;
-	transition: 180ms ease;
+	transition: 180ms ease, margin 180ms ease 100ms;
 }
 
 ul, li {

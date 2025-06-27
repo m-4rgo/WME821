@@ -64,7 +64,6 @@
 }
 
 .berry-hunt-button:hover, .berry-hunt-button:focus {
-	margin: 2.5px 5px -2.5px;
 	padding: 10px 16px 6px;
 	background: var(--berry-pink-dark);
 	border-color: var(--berry-pink);
