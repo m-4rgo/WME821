@@ -223,6 +223,7 @@ ul, li {
     justify-content: center;
     background: #102820;
     color: var(--accent-light);
+    z-index: 6;
 }
 
 .open .display-image {
@@ -237,6 +238,15 @@ ul, li {
 	max-width: 100%;
 	max-height: 100%;
 	border-radius: 4px;
+}
+
+.art-wrap.open a {
+	color: #7cb868;
+	transition: color 0ms ease, opacity 200ms ease;
+}
+
+.art-wrap.open a:hover, .art-wrap.open a:focus {
+	opacity: 0.8;
 }
 
 .close-button {
@@ -517,6 +527,13 @@ ul, li {
 	flex: 0 0 150px;
 }
 
+.narrativetext {
+	opacity: 0.7;
+	font-style: italic;
+	margin: 5px 0;
+}
+
+
 .berrytree {
 	display: flex;
 	flex-wrap: wrap;
@@ -682,7 +699,7 @@ ul, li {
 		flex-direction: column;
 	    justify-content: flex-start;
 	    align-items: stretch;
-	    min-height: 260px;
+	    min-height: 380px;
 	}
 
 	.info-row.large {
