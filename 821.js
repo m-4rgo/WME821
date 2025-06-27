@@ -108,6 +108,20 @@ function buttonClose() {
 
 //This lets you tab left & right
 
+//This lets all display images open to a modal view
+var image = document.querySelectorAll(".left-arrow");
+//add listeners to all of the icons
+for (i = 0; i < image.length; i++) {
+  image[i].addEventListener('click', tabLeft);
+}
+
+//This lets all display images open to a modal view
+var image = document.querySelectorAll(".right-arrow");
+//add listeners to all of the icons
+for (i = 0; i < image.length; i++) {
+  image[i].addEventListener('click', tabRight);
+}
+
 function tabLeft() {
   var openModal = document.querySelectorAll(".art-wrap.open");
   if(openModal.length > 0) {

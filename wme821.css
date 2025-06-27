@@ -546,6 +546,41 @@ ul, li {
 	margin: 0;
 }
 
+.left-arrow, .right-arrow {
+	display: none;
+	content: "";
+	background-image: url("img/angle-left-solid.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 80%;
+	width: 40px;
+    height: 40px;
+    margin: 10px;
+	position: absolute;
+	top: calc(50% - 20px);
+    transition: 200ms ease;
+    filter: invert(1);
+}
+
+.art-wrap.open .left-arrow, .art-wrap.open .right-arrow {
+	opacity: 0.1;
+	display: block;
+}
+
+.art-wrap.open .left-arrow {
+	background-image: url("img/angle-left-solid.svg");
+	left: 0;
+}
+
+.art-wrap.open .right-arrow {
+	background-image: url("img/angle-right-solid.svg");
+	right: 0;
+}
+
+.art-wrap.open .left-arrow:hover, .art-wrap.open .left-arrow:focus, .art-wrap.open .right-arrow:hover, .art-wrap.open .right-arrow:focus {
+	opacity: 0.6;
+}
+
 .berry h3, .berry h4 {
 	margin: 2.5px 0;
 }
