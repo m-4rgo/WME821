@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Berry Hunt for Goose">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="wme821.css">
+    <link rel="stylesheet" type="text/css" href="berryhunt.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" type="script" href="wme821.css">
+    
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Delius+Swash+Caps&family=Rosarivo:ital@0;1&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+    </style>
+
+    <title>Goose's Family Potluck (short game)</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+
+    <noscript>
+        <style>
+            .tooltip:hover .tooltiptext, .tooltip:focus .tooltiptext {
+              visibility: visible;
+              transition: opacity 200ms ease 100ms;
+              opacity: 1;
+            }
+        </style>
+    </noscript>
+  </head>
+
+  <body>
+    <div class="main-wrap">
+    <a class="back-button" href="wme821.html"><i class="fa-solid fa-angle-left"></i></a>
+      <h1>Family Potluck (short game)</h1>
+      <h4 class="center">Go with Goose on a little adventure!</h4>
+
+      <div id="berry-hunt-wrap" class="initial">
+        <div class="inner-wrap">
+      		<div id="berry-hunt-container">
+            <img src="img/gameimg/slide3npc.png" class="slide3">
+            <img src="img/gameimg/slide4npc.png" class="slide4">
+            <img src="img/gameimg/slide5npc.png" class="slide5">
+            <img src="img/gameimg/slide12npc.png" class="slide12">
+            <img src="img/gameimg/slide13npc.png" class="slide13">
+            <img src="img/gameimg/slide14npc.png" class="slide14">
+            <img src="img/gameimg/basket/basketimage.png" class="basket">
+            <img src="img/gameimg/basket/violetsback.png" class="violets">
+            <img src="img/gameimg/basket/birdimageback.png" class="bird">
+            <img src="img/gameimg/basket/blackberriesimage.png" class="blackberry">
+            <img src="img/gameimg/basket/maplesyrupimage.png" class="syrup">
+            <img src="img/gameimg/basket/strawberriesimage.png" class="strawberry">
+            <img src="img/gameimg/basket/birdimage.png" class="bird">
+            <img src="img/gameimg/basket/violetsfront.png" class="violets">
+          </div>
+          <!-- options !-->
+          <div class="berry-hunt-textbox">
+            <div class="initial">
+              It's a beautiful summer day, the morning of your annual family potluck at the top of the mountain. You're excited to see them all again, but uh oh - you haven't gathered your contribution yet! Well, that's okay, you can do it on the way.
+              <div class="buttons-wrapper">
+                <button class="berry-hunt-button" onclick="changePane('slide1')">Better get to it!</button>
+              </div>
+            </div>
+
+            <div class="slide1">
+              You walk down the path. The weather is nice
+              <div class="buttons-wrapper">
+                <button class="berry-hunt-button" onclick="changePane('slide2')"><i>♫ Aussie roooads, take me hooome ♫</i></button>
+              </div>
+            </div>
+
+            <div class="slide2">
+              What's this? It seems to be the boundary of some sort of farm. You can smell a pie baking in the distance. What do you do?
+              <div class="buttons-wrapper">
+                <button class="berry-hunt-button" onclick="changePane('slide6')">Continue on</button>
+                <button class="berry-hunt-button" onclick="changePane('slide3')">Check out the farm</button>
+              </div>
+            </div>
+
+            <div class="slide3">
+              You see a rose grey equid mare, grazing just inside the fence. She perks up as you approach.
+              <div class="dialogue">“Oh hey! What's up?”</div>
+              <div class="buttons-wrapper">
+                <button class="berry-hunt-button" onclick="changePane('slide4');inventory('syrup');">"Could I please have some syrup?"</button>
+                <button class="berry-hunt-button" onclick="changePane('slide5')">"Hand over your syrup, NOW!"</button>
+              </div>
+            </div>
+
+            <div class="slide4">
+              <div class="dialogue">“Oh - that's for the humans, but I know where they keep <i>everything</i>. I got you, boo.”</div>
+              <div class="narrativetext">Maple syrup added to inventory</div>
+              <div class="buttons-wrapper">
+                <button class="berry-hunt-button" onclick="changePane('slide6')">Back to the path</button>
+              </div>
+            </div>
+
+            <div class="slide5">
+              <div class="dialogue">“Wow - rude much? Scram, jerk!”</div>
+              <div class="buttons-wrapper">
+                <button class="berry-hunt-button" onclick="changePane('slide6')">Better get out of here.</button>
+              </div>
+            </div>
+
+            <div class="slide6">
+              You walk down the path. Birds fly overhead. 
+              <div class="buttons-wrapper">
+                <button class="berry-hunt-button" onclick="changePane('slide7')"><i>♫ To the heeerd, I belong! ♫</i></button>
+              </div>
+            </div>
+
+            <div class="slide7">
+              You hear some chirping off of the path, in the trees.
+              <div class="buttons-wrapper">
+                <button class="berry-hunt-button" onclick="changePane('slide8')">Investigate</button>
+                <button class="berry-hunt-button" onclick="changePane('slide10')">Keep going</button>
+              </div>
+            </div>
+
+            <div class="slide8">
+              It’s a rainbow lorikeet! They seem to be stuck...
+              <div class="buttons-wrapper">
+                <button class="berry-hunt-button" onclick="changePane('slide9');inventory('bird');">Help</button>
+              </div>
+            </div>
+
+            <div class="slide9">
+              They’re really grateful for your help. It seems you’ve made a friend! 
+              <div class="narrativetext">Rainbow lorikeet added to inventory</div>
+              <div class="buttons-wrapper">
+                <button class="berry-hunt-button" onclick="changePane('slide10')">Return to the path</button>
+              </div>
+            </div>
+
+            <div class="slide10">
+              You walk down the path. A frog hops alongside you.
+              <div class="buttons-wrapper">
+                <button class="berry-hunt-button" onclick="changePane('slide11')"><i>♫ Family potluck, thrown by grandma ♫</i></button>
+              </div>
+            </div>
+
+            <div class="slide11">
+              You hear singing.
+              <div class="buttons-wrapper">
+                <button class="berry-hunt-button" onclick="changePane('slide12')">Follow the voice</button>
+                <button class="berry-hunt-button" onclick="changePane('slide15')">Continue on the path</button>
+              </div>
+            </div>
+
+            <div class="slide12">
+              You find an equid, almost entirely submerged in water, and tangled in weeds and blackberry briars.
+              <div class="dialogue">"Hello, weary traveller. What brings you to my pond?"</div>
+              <div class="buttons-wrapper">
+                <button class="berry-hunt-button" onclick="changePane('slide13');inventory('blackberry');">I was listening to your beautiful singing!</button>
+                <button class="berry-hunt-button" onclick="changePane('slide14')">AHH! A WITCH!</button>
+              </div>
+            </div>
+
+            <div class="slide13">
+              <div class="dialogue">"You flatter me - and you're not so bad yourself. Here, take these for your journey. I promise, they're safe to eat."</div>
+              <div class="narrativetext">Blackberries added to inventory</div>
+              <div class="buttons-wrapper">
+                <button class="berry-hunt-button" onclick="changePane('slide15')">Thank you!</button>
+              </div>
+            </div>
+
+            <div class="slide14">
+             <div class="dialogue">"Don’t be scared by what you don’t know. I hope you learn a lesson from this."</div>
+              <div class="buttons-wrapper">
+                <button class="berry-hunt-button" onclick="changePane('slide15')">SURE OKAY, BYE SCARY WITCH</button>
+              </div>
+            </div>
+
+            <div class="slide15">
+             You walk down the path. It is quite warm today.
+              <div class="buttons-wrapper">
+                <button class="berry-hunt-button" onclick="changePane('slide17')"><i>♫ Take me home, aussie roads ♫</i></button>
+              </div>
+            </div>
+
+            <div class="slide17">
+            A beautiful river crosses over your path. There's a group of equids wading through the water.
+            “Hello! Come join us! The water is lovely and cool!”
+              <div class="buttons-wrapper">
+                <button class="berry-hunt-button" onclick="changePane('slide18');inventory('strawberry')">Don’t mind if I do!</button>
+                <button class="berry-hunt-button" onclick="changePane('slide19')">CANNONBALL!</button>
+              </div>
+            </div>
+
+            <div class="slide18">
+            You have a lovely break. You earned it!
+            <div class="narrativetext">Strawberries added to inventory</div>
+              <div class="buttons-wrapper">
+                <button class="berry-hunt-button" onclick="changePane('slide20');">Dry off</button>
+              </div>
+            </div>
+
+            <div class="slide19">
+            Now that was a bit rude.
+              <div class="buttons-wrapper">
+                <button class="berry-hunt-button" onclick="changePane('slide20')">Oops.</button>
+              </div>
+            </div>
+
+            <div class="slide20">
+            You walk down the path. It slopes gently upwards.
+              <div class="buttons-wrapper">
+                <button class="berry-hunt-button" onclick="changePane('slide21')">Continue</button>
+                <button class="berry-hunt-button" onclick="changePane('slide16')">Whinny obnoxiously</button>
+              </div>
+            </div>
+
+            <div class="slide16">
+             That felt cathartic.
+              <div class="buttons-wrapper">
+                <button class="berry-hunt-button" onclick="changePane('slide21')">Continue</button>
+              </div>
+            </div>
+
+            <div class="slide21">
+            It’s getting steep! (joke about it being oddly shaded here?)
+              <div class="buttons-wrapper">
+                <button class="berry-hunt-button" onclick="changePane('slide22')">Take a break</button>
+                <button class="berry-hunt-button" onclick="changePane('slide25')">Press on</button>
+              </div>
+            </div>
+
+            <div class="slide22">
+              While you're lying in the grass, a pair of mares waltz over to you.
+            <div class="dialogue">“Aha! We were just looking for someone to solve our riddle!”</div>
+            <div class="riddle">I’m tiny and grey with a moo soft and sweet,<br>
+            I dance through the daisies on four little feet.<br>
+            I’m not very loud, but I still know how—<br>
+            To steal hearts each day — what am I now?</div>
+              <div class="buttons-wrapper">
+                <button class="berry-hunt-button" onclick="changePane('slide23a');inventory('violets');">Bessie?</button>
+                <button class="berry-hunt-button" onclick="changePane('slide23b');inventory('violets');">That grey cow?</button>
+                <button class="berry-hunt-button" onclick="changePane('slide24')">(pretend to be asleep)</button>
+              </div>
+            </div>
+
+            <div class="slide23a">
+            <div class="dialogue">“Oh...”</div>
+            <div class="dialogue2">“Well, that isn't what we had in mind, but I suppose you're right!”</div>
+            <div class="narrativetext">Violets added to inventory</div>
+              <div class="buttons-wrapper">
+                <button class="berry-hunt-button" onclick="changePane('slide25')">Continue</button>
+              </div>
+            </div>
+
+            <div class="slide23b">
+            <div class="dialogue">“That's right!”</div>
+            <div class="dialogue2">“Thanks for playing along!”</div>
+            <div class="narrativetext">Violets added to inventory</div>
+              <div class="buttons-wrapper">
+                <button class="berry-hunt-button" onclick="changePane('slide25')">Continue</button>
+              </div>
+            </div>
+
+            <div class="slide24">
+            <div class="dialogue">“Oh… he seems tired… we better not bother him.”</div>
+              <div class="buttons-wrapper">
+                <button class="berry-hunt-button" onclick="changePane('slide25')">Sneak away</button>
+              </div>
+            </div>
+
+            <div class="slide25">
+            You hear familiar voices ahead!
+              <div class="buttons-wrapper">
+                <button class="berry-hunt-button" onclick="changePane('slide26')">Almost there!</button>
+              </div>
+            </div>
+
+            <div class="slide26">
+            You arrived safely at the potluck!
+              <div class="buttons-wrapper">
+                <button class="berry-hunt-button" onclick="successCheck()">Hand over your dish</button>
+              </div>
+            </div>
+
+            <div class="fail">
+            You didn't bring anything... well, everyone is still happy to see you.
+              <div class="buttons-wrapper">
+                <button class="berry-hunt-button" onclick="changePane('slide28')">Enjoy the event</button>
+              </div>
+            </div>
+
+            <div class="success">
+            What incredible work!
+              <div class="buttons-wrapper">
+                <button class="berry-hunt-button" onclick="changePane('slide28')">Enjoy the event</button>
+              </div>
+            </div>
+
+            <div class="perfect">
+            Wow, what a stupendous dish! Everyone is amazed by your contribution!
+              <div class="buttons-wrapper">
+                <button class="berry-hunt-button" onclick="changePane('slide28')">Enjoy the event</button>
+              </div>
+            </div>
+
+            <div class="slide28">
+            [Closing words]
+              <div class="buttons-wrapper">
+                <button class="berry-hunt-button" onclick="changePane('initial');clearItems();">Play again</button>
+                <a href="wme821.html" class="berry-hunt-button">Home</a>
+              </div>
+            </div>
+
+          </div>
+          <!-- options !-->
+        </div>
+
+        <!-- inventory !-->
+
+        <div id="inventory" class="center textbox">
+          <h3>Inventory</h3>
+          <div class="berries-wrap">
+            <div class="berry-item earned" id="basket">
+              <div class="tooltip"><img src="img/gameimg/inventory/basket.png"><span class="tooltiptext">A worn wicker basket, for carrying ingredients!</span></div>
+            </div>
+            <div class="berry-item collectable" id="syrup">
+              <div class="tooltip"><img src="img/gameimg/inventory/syrup.png"><span class="tooltiptext">A delicious bottle of maple syrup!</span></div>
+            </div>
+            <div class="berry-item collectable" id="bird">
+              <div class="tooltip"><img src="img/gameimg/inventory/bird.png"><span class="tooltiptext">A very grateful rainbow lorikeet! Seems like they'll be keeping you company.</span></div>
+            </div>
+            <div class="berry-item collectable" id="blackberry">
+              <div class="tooltip"><img src="img/gameimg/inventory/blackberry.png"><span class="tooltiptext">A handful of plump blackberries from a mysterious lady.</span></div>
+            </div>
+            <div class="berry-item collectable" id="strawberry">
+              <div class="tooltip"><img src="img/gameimg/inventory/strawberries.png"><span class="tooltiptext">Fresh, juicy, wild strawberries from by the river!</span></div>
+            </div>
+            <div class="berry-item collectable" id="violets">
+              <div class="tooltip"><img src="img/gameimg/inventory/violets.png"><span class="tooltiptext">A healthy bunch of sweet wild violets!</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- inventory !-->
+      </div>
+      <h4 class="center">Code & layout by flyteck, script led by Ralonica, art by everyone <i class="fa-solid fa-heart"></i></h4>
+    </div>
+
+     <script src="821.js"></script>
+  </body>
+
+  <footer>
+  </footer>
+</html>

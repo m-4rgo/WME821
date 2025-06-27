@@ -1,0 +1,453 @@
+#berry-hunt-wrap {
+	margin: 10px 0 0;
+}
+
+#berry-hunt-container {
+	background-image: url("https://s.equimed.com/images/336/670/450/2.jpg");
+	background-size: cover;
+	background-position: center center;
+	aspect-ratio: 5/3;
+	border: 5px solid var(--accent-dark);
+	border-radius: 10px;
+}
+
+/* background sources:
+- https://pngtree.com/element/down?id=MTI4Nzg4Mjc=&type=1&time=1750864912&token=ZmY0ZGFmMWJhNjM4MjBlMTc3ZDA1ODU4MTUzZTE4ZDI=&t=4
+- https://architextures.org/textures/2071 
+*/
+
+.berry-hunt-textbox {
+	margin-top: -5px;
+	height: 25vh;
+	border: 5px solid var(--accent-dark);
+	border-radius: 10px;
+	padding: 15px;
+	text-align: center;
+	background: var(--accent-light);
+	overflow: auto;
+}
+
+.berry-hunt-textbox::-webkit-scrollbar {
+  width: 10px;
+}
+ 
+.berry-hunt-textbox::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  overflow: visible;
+}
+ 
+.berry-hunt-textbox::-webkit-scrollbar-thumb {
+  background: #e97d9c;
+  border: 1px solid var(--berry-pink-dark);
+  border-radius: 6px;
+}
+
+.buttons-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 0 0;
+}
+
+.berry-hunt-button {
+	font-family: inherit;
+    border: 2px dashed var(--berry-pink-dark);
+    background: var(--berry-pink);
+    color: var(--accent-light);
+    font-size: 1em;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 200ms ease;
+    margin: 0 5px;
+    font-weight: 300;
+}
+
+.berry-hunt-button:hover, .berry-hunt-button:focus {
+	margin: 2.5px 5px -2.5px;
+	padding: 10px 16px 6px;
+	background: var(--berry-pink-dark);
+	border-color: var(--berry-pink);
+
+}
+
+#berry-hunt-container {
+	transition: background-image 200ms ease;
+	position: relative;
+	overflow: hidden;
+}
+
+#berry-hunt-container img {
+	position: absolute;
+}
+
+#inventory {
+	margin: 10px auto 10px;
+	display: flex;
+	flex-wrap: wrap;
+	border-width: 5px;
+}
+
+#inventory h3 {
+	width: 100%;
+}
+
+.berry-item {
+	border: 2px solid #786148;
+	border-radius: 6px;
+	padding: 5px;
+	flex-basis: 40%;
+	aspect-ratio: 1;
+	margin: 5px;
+	background: #caba9c80;
+}
+
+.berry-item img {
+	display: none;
+}
+
+.berry-item.earned img {
+	display: block;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 200ms;
+}
+
+.berries-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.hidden {
+	display: none;
+}
+
+.narrativetext {
+	opacity: 0.7;
+	font-style: italic;
+	margin: 5px 0;
+}
+
+#inventory .tooltiptext {
+	background: #fffdf8;
+	color: var(--accent-mid);
+	filter: drop-shadow(1.5px 1.5px 0px var(--accent-mid)) drop-shadow(-1.5px -1.5px 0px var(--accent-mid)) drop-shadow(1.5px -1.5px 0px var(--accent-mid)) drop-shadow(-1.5px 1.5px 0px var(--accent-mid));
+}
+
+#inventory .tooltip .tooltiptext::after {
+    border-color: #fffdf8 transparent transparent transparent;
+    border-width: 8px;
+    margin-left: -8px;
+}
+
+.dialogue, .dialogue2 {
+	margin: 5px auto;
+	background: #caba9c80;
+	width: fit-content;
+	padding: 10px 20px;
+	border-radius: 10px;
+	position: relative;
+}
+
+.dialogue:after {
+	content: '';
+    position: absolute;
+    left: -5px;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-right-color: #caba9c80;
+    border-left: 0;
+    margin-top: -5px;
+    margin-left: -5px;
+    transform: scaleX(3);
+}
+
+.dialogue2:after {
+	content: '';
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-left-color: #caba9c80;
+    border-right: 0;
+    margin-top: -5px;
+    margin-left: -5px;
+    transform: scaleX(3);
+}
+
+.riddle {
+	border: 2px dashed #4c6444;
+    padding: 20px;
+    width: fit-content;
+    margin: 10px auto;
+    border-radius: 20px;
+    color: #4c6444;
+    font-family: 'Akaya Kanadaka';
+    font-size: 18px;
+}
+
+/* CSS stuff for the toggles */
+
+#berry-hunt-wrap .initial, 
+#berry-hunt-wrap .slide1, 
+#berry-hunt-wrap .slide2, 
+#berry-hunt-wrap .slide3,
+#berry-hunt-wrap .slide4,
+#berry-hunt-wrap .slide5,
+#berry-hunt-wrap .slide6,
+#berry-hunt-wrap .slide7,
+#berry-hunt-wrap .slide8,
+#berry-hunt-wrap .slide9,
+#berry-hunt-wrap .slide10,
+#berry-hunt-wrap .slide11,
+#berry-hunt-wrap .slide12,
+#berry-hunt-wrap .slide13,
+#berry-hunt-wrap .slide14,
+#berry-hunt-wrap .slide15,
+#berry-hunt-wrap .slide16,
+#berry-hunt-wrap .slide17,
+#berry-hunt-wrap .slide18,
+#berry-hunt-wrap .slide19,
+#berry-hunt-wrap .slide20,
+#berry-hunt-wrap .slide21,
+#berry-hunt-wrap .slide22,
+#berry-hunt-wrap .slide23a,
+#berry-hunt-wrap .slide23b,
+#berry-hunt-wrap .slide24,
+#berry-hunt-wrap .slide25,
+#berry-hunt-wrap .slide26,
+#berry-hunt-wrap .slide27,
+#berry-hunt-wrap .slide28,
+#berry-hunt-wrap .fail,
+#berry-hunt-wrap .success,
+#berry-hunt-wrap .perfect  {
+	display: none;
+}
+
+#berry-hunt-wrap.initial .initial,
+#berry-hunt-wrap.slide1 .slide1,
+#berry-hunt-wrap.slide2 .slide2,
+#berry-hunt-wrap.slide3 .slide3,
+#berry-hunt-wrap.slide4 .slide4,
+#berry-hunt-wrap.slide5 .slide5,
+#berry-hunt-wrap.slide6 .slide6,
+#berry-hunt-wrap.slide7 .slide7,
+#berry-hunt-wrap.slide8 .slide8,
+#berry-hunt-wrap.slide9 .slide9,
+#berry-hunt-wrap.slide10 .slide10,
+#berry-hunt-wrap.slide11 .slide11,
+#berry-hunt-wrap.slide12 .slide12,
+#berry-hunt-wrap.slide13 .slide13,
+#berry-hunt-wrap.slide14 .slide14,
+#berry-hunt-wrap.slide15 .slide15,
+#berry-hunt-wrap.slide16 .slide16,
+#berry-hunt-wrap.slide17 .slide17,
+#berry-hunt-wrap.slide18 .slide18,
+#berry-hunt-wrap.slide19 .slide19,
+#berry-hunt-wrap.slide20 .slide20,
+#berry-hunt-wrap.slide21 .slide21,
+#berry-hunt-wrap.slide22 .slide22,
+#berry-hunt-wrap.slide23a .slide23a,
+#berry-hunt-wrap.slide23b .slide23b,
+#berry-hunt-wrap.slide24 .slide24,
+#berry-hunt-wrap.slide25 .slide25,
+#berry-hunt-wrap.slide26 .slide26,
+#berry-hunt-wrap.slide27 .slide27,
+#berry-hunt-wrap.slide28 .slide28,
+#berry-hunt-wrap.fail .fail,
+#berry-hunt-wrap.success .success,
+#berry-hunt-wrap.perfect .perfect {
+	display: block;
+}
+
+#berry-hunt-wrap #berry-hunt-container img.basket,
+#berry-hunt-wrap #berry-hunt-container img.syrup,
+#berry-hunt-wrap #berry-hunt-container img.bird,
+#berry-hunt-wrap #berry-hunt-container img.strawberry,
+#berry-hunt-wrap #berry-hunt-container img.blackberry,
+#berry-hunt-wrap #berry-hunt-container img.violets {
+	display: none;
+}
+
+#berry-hunt-wrap.fail #berry-hunt-container img.basket,
+#berry-hunt-wrap.success #berry-hunt-container img.basket,
+#berry-hunt-wrap.perfect #berry-hunt-container img.basket {
+	display: block;
+}
+
+#berry-hunt-wrap.fail #berry-hunt-container.syrup img.syrup,
+#berry-hunt-wrap.success #berry-hunt-container.syrup img.syrup,
+#berry-hunt-wrap.perfect #berry-hunt-container.syrup img.syrup {
+	display: block;
+}
+
+#berry-hunt-wrap.fail #berry-hunt-container.bird img.bird,
+#berry-hunt-wrap.success #berry-hunt-container.bird img.bird,
+#berry-hunt-wrap.perfect #berry-hunt-container.bird img.bird {
+	display: block;
+}
+
+#berry-hunt-wrap.fail #berry-hunt-container.strawberry img.strawberry,
+#berry-hunt-wrap.success #berry-hunt-container.strawberry img.strawberry,
+#berry-hunt-wrap.perfect #berry-hunt-container.strawberry img.strawberry {
+	display: block;
+}
+
+#berry-hunt-wrap.fail #berry-hunt-container.blackberry img.blackberry,
+#berry-hunt-wrap.success #berry-hunt-container.blackberry img.blackberry,
+#berry-hunt-wrap.perfect #berry-hunt-container.blackberry img.blackberry {
+	display: block;
+}
+
+#berry-hunt-wrap.fail #berry-hunt-container.violets img.violets,
+#berry-hunt-wrap.success #berry-hunt-container.violets img.violets,
+#berry-hunt-wrap.perfect #berry-hunt-container.violets img.violets {
+	display: block;
+}
+
+#berry-hunt-wrap.slide1 #berry-hunt-container {
+	background-image: url(img/gameimg/slide1.png);
+}
+
+#berry-hunt-wrap.slide2 #berry-hunt-container {
+	background-image: url(img/gameimg/slide2.png);
+}
+
+#berry-hunt-wrap.slide3 #berry-hunt-container, #berry-hunt-wrap.slide4 #berry-hunt-container, #berry-hunt-wrap.slide5 #berry-hunt-container {
+	background-image: url(img/gameimg/slide3.png);
+}
+
+#berry-hunt-wrap.slide6 #berry-hunt-container {
+	background-image: url(img/gameimg/slide6.png);
+}
+
+#berry-hunt-wrap.slide7 #berry-hunt-container {
+	background-image: url(img/gameimg/slide7.png);
+}
+
+#berry-hunt-wrap.slide8 #berry-hunt-container {
+	background-image: url(img/gameimg/slide8.png);
+}
+
+#berry-hunt-wrap.slide9 #berry-hunt-container {
+	background-image: url(img/gameimg/slide9.png);
+}
+
+#berry-hunt-wrap.slide10 #berry-hunt-container {
+	background-image: url(img/gameimg/slide10.png);
+}
+
+#berry-hunt-wrap.slide11 #berry-hunt-container {
+	background-image: url(img/gameimg/slide11.png);
+}
+
+#berry-hunt-wrap.slide12 #berry-hunt-container, #berry-hunt-wrap.slide13 #berry-hunt-container, #berry-hunt-wrap.slide14 #berry-hunt-container {
+	background-image: url(img/gameimg/slide12.png);
+}
+
+#berry-hunt-wrap.slide15 #berry-hunt-container {
+	background-image: url(img/gameimg/slide15.png);
+}
+
+#berry-hunt-wrap.slide16 #berry-hunt-container {
+	background-image: url(img/gameimg/slide16.png);
+}
+
+#berry-hunt-wrap.slide17 #berry-hunt-container {
+	background-image: url(img/gameimg/slide17.png);
+}
+
+#berry-hunt-wrap.slide18 #berry-hunt-container {
+	background-image: url(img/gameimg/slide18.png);
+}
+
+#berry-hunt-wrap.slide19 #berry-hunt-container {
+	background-image: url(img/gameimg/slide19.png);
+}
+
+#berry-hunt-wrap.slide20 #berry-hunt-container {
+	background-image: url(img/gameimg/slide20.png);
+}
+
+#berry-hunt-wrap.slide21 #berry-hunt-container {
+	background-image: url(img/gameimg/slide21.png);
+}
+
+#berry-hunt-wrap.slide22 #berry-hunt-container {
+	background-image: url(img/gameimg/slide22.png);
+}
+
+#berry-hunt-wrap.slide23 #berry-hunt-container {
+	background-image: url(img/gameimg/slide23.png);
+}
+
+#berry-hunt-wrap.slide24 #berry-hunt-container {
+	background-image: url(img/gameimg/slide24.png);
+}
+
+#berry-hunt-wrap.slide25 #berry-hunt-container {
+	background-image: url(img/gameimg/slide25.jpg);
+}
+
+#berry-hunt-wrap.slide26 #berry-hunt-container {
+	background-image: url(img/gameimg/slide26.png);
+}
+
+#berry-hunt-wrap.slide28 #berry-hunt-container {
+	background-image: url(img/gameimg/slide28.png);
+}
+
+/* media queries for mobile etc */
+
+@media(min-width: 600px) {
+	.berry-hunt-textbox {
+		height: 18vh;
+	}
+}
+
+@media(min-width: 1000px) {
+	#berry-hunt-wrap {
+		width: 1050px;
+		max-width: 90%;
+		margin: 10px auto 0;
+		display: flex;
+	}
+
+	.inner-wrap {
+		display: flex;
+        flex-direction: column;
+        flex: 1 0 70%;
+	}
+
+	#inventory {
+		margin: 0 0 0 5px;
+	    align-items: flex-start;
+	    flex-direction: column;
+	    flex: 1 1 30%;
+	    max-width: 250px;
+	}
+
+	.berry-hunt-textbox {
+		height: 135px;
+		padding: 20px;
+	}
+
+	.buttons-wrapper {
+		padding: 10px 10px 0;
+	}
+
+	.berry-hunt-button {
+		font-size: 1.1em;
+	}
+
+	.berry-item {
+		margin: 2.5px;
+	}
+}
