@@ -64,6 +64,10 @@ h4 {
 	color: #2C1F17;
 }
 
+h2 ~ h4 {
+	margin-top: -5px;
+}
+
 h1#title {
 	font-size: 2.6em;
 	position: absolute;
@@ -433,6 +437,7 @@ ul, li {
     padding: 10px;
     background: url(img/berrybg.jpg) center center / 120px;
     height: 280px;
+    align-items: stretch;
 }
 
 .texbox h1, .texbox h2, .texbox h3, .info-block h1, .info-block h2, .info-block h3, .info-row h1, .info-row h2, .info-row h3, .info-column h1, .info-column h2, .info-column h3 {
