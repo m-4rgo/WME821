@@ -198,7 +198,7 @@ ul, li {
 	pointer-events: none;
 	max-height: 100%;
 	background-size: contain;
-	border-radius: 40px;
+	border-radius: 30px;
 }
 
 .display-image:hover, .display-image:focus {

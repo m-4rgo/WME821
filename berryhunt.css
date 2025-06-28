@@ -369,20 +369,12 @@
 	background-image: url(img/gameimg/slide20.png);
 }
 
-#berry-hunt-wrap.slide21 #berry-hunt-container {
-	background-image: url(img/gameimg/slide21.png);
-}
-
-#berry-hunt-wrap.slide22 #berry-hunt-container {
-	background-image: url(img/gameimg/slide22.png);
-}
-
-#berry-hunt-wrap.slide23 #berry-hunt-container {
-	background-image: url(img/gameimg/slide23.png);
-}
-
+#berry-hunt-wrap.slide21 #berry-hunt-container,
+#berry-hunt-wrap.slide22 #berry-hunt-container,
+#berry-hunt-wrap.slide23a #berry-hunt-container,
+#berry-hunt-wrap.slide23b #berry-hunt-container,
 #berry-hunt-wrap.slide24 #berry-hunt-container {
-	background-image: url(img/gameimg/slide24.png);
+	background-image: url(img/gameimg/slide21.png);
 }
 
 #berry-hunt-wrap.slide25 #berry-hunt-container {
