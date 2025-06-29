@@ -206,7 +206,8 @@
 #berry-hunt-wrap .slide6,
 #berry-hunt-wrap .slide7,
 #berry-hunt-wrap .slide8,
-#berry-hunt-wrap .slide9,
+#berry-hunt-wrap .slide9a,
+#berry-hunt-wrap .slide9b,
 #berry-hunt-wrap .slide10,
 #berry-hunt-wrap .slide11,
 #berry-hunt-wrap .slide12,
@@ -242,7 +243,8 @@
 #berry-hunt-wrap.slide6 .slide6,
 #berry-hunt-wrap.slide7 .slide7,
 #berry-hunt-wrap.slide8 .slide8,
-#berry-hunt-wrap.slide9 .slide9,
+#berry-hunt-wrap.slide9b .slide9b,
+#berry-hunt-wrap.slide9a .slide9a,
 #berry-hunt-wrap.slide10 .slide10,
 #berry-hunt-wrap.slide11 .slide11,
 #berry-hunt-wrap.slide12 .slide12,
@@ -334,12 +336,8 @@
 	background-image: url(img/gameimg/slide7.png);
 }
 
-#berry-hunt-wrap.slide8 #berry-hunt-container {
+#berry-hunt-wrap.slide8 #berry-hunt-container, #berry-hunt-wrap.slide9a #berry-hunt-container, #berry-hunt-wrap.slide9b #berry-hunt-container {
 	background-image: url(img/gameimg/slide8.png);
-}
-
-#berry-hunt-wrap.slide9 #berry-hunt-container {
-	background-image: url(img/gameimg/slide9.png);
 }
 
 #berry-hunt-wrap.slide10 #berry-hunt-container {

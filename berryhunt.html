@@ -67,6 +67,10 @@
             <img src="img/gameimg/slide3npc.png" class="slide3">
             <img src="img/gameimg/slide4npc.png" class="slide4">
             <img src="img/gameimg/slide5npc.png" class="slide5">
+            <img src="img/gameimg/slide8npc.png" class="slide8">
+            <img src="img/gameimg/slide8ribbon.png" class="slide8 slide9b">
+            <img src="img/gameimg/slide9anpc.png" class="slide9a">
+            <img src="img/gameimg/slide9bnpc.png" class="slide9b">
             <img src="img/gameimg/slide12npc.png" class="slide12">
             <img src="img/gameimg/slide13npc.png" class="slide13">
             <img src="img/gameimg/slide14npc.png" class="slide14">
@@ -150,13 +154,21 @@
             <div class="slide8">
               It’s a rainbow lorikeet! They seem to be stuck...
               <div class="buttons-wrapper">
-                <button class="berry-hunt-button" onclick="changePane('slide9');inventory('bird');">Help</button>
+                <button class="berry-hunt-button" onclick="changePane('slide9a');inventory('bird');">Pull the ribbon</button>
+                <button class="berry-hunt-button" onclick="changePane('slide9b');">Shake the tree</button>
               </div>
             </div>
 
-            <div class="slide9">
-              They’re really grateful for your help. It seems you’ve made a friend! 
+            <div class="slide9a">
+              Their foot comes loose! They seem really grateful for your help. Looks like you’ve made a friend! 
               <div class="narrativetext">Rainbow lorikeet added to inventory</div>
+              <div class="buttons-wrapper">
+                <button class="berry-hunt-button" onclick="changePane('slide10')">Return to the path</button>
+              </div>
+            </div>
+
+            <div class="slide9b">
+              The ribbon comes loose! But the bird doesn't look too pleased...
               <div class="buttons-wrapper">
                 <button class="berry-hunt-button" onclick="changePane('slide10')">Return to the path</button>
               </div>
