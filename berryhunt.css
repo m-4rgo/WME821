@@ -3,7 +3,7 @@
 }
 
 #berry-hunt-container {
-	background-image: url("https://s.equimed.com/images/336/670/450/2.jpg");
+	background-image: url("img/gameimg/initial.png");
 	background-size: cover;
 	background-position: center center;
 	aspect-ratio: 5/3;
@@ -15,6 +15,15 @@
 - https://pngtree.com/element/down?id=MTI4Nzg4Mjc=&type=1&time=1750864912&token=ZmY0ZGFmMWJhNjM4MjBlMTc3ZDA1ODU4MTUzZTE4ZDI=&t=4
 - https://architextures.org/textures/2071 
 */
+
+.invisible-loader {
+	opacity: 0;
+	height: 0;
+	width: 0;
+	overflow: hidden;
+	position: absolute;
+	pointer-events: none;
+}
 
 .berry-hunt-textbox {
 	margin-top: -5px;
@@ -83,7 +92,7 @@
 #inventory {
 	margin: 10px auto 10px;
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
 	border-width: 5px;
 }
 
@@ -414,7 +423,6 @@
 	#inventory {
 		margin: 0 0 0 5px;
 	    align-items: flex-start;
-	    flex-direction: column;
 	    flex: 1 1 30%;
 	    max-width: 250px;
 	}
