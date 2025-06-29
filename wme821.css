@@ -542,8 +542,9 @@ ul, li {
 }
 
 .berrytree img {
-	width: 150px;
-	margin-right: 38px;
+	width: 100%;
+	max-width: none;
+	margin: 10px 0;
 }
 
 .berry, .art-wrap {
@@ -642,6 +643,10 @@ ul, li {
 	.berry {
 		flex-direction: column;
 		max-width: 200px;
+	}
+
+	.berrytree img {
+		width: 120%;
 	}
 
 	#personality {
