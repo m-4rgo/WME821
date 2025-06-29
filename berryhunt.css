@@ -64,7 +64,7 @@
     background: var(--berry-pink);
     color: var(--accent-light);
     font-size: 1em;
-    padding: 8px 16px;
+    padding: 5px 15px;
     border-radius: 10px;
     cursor: pointer;
     transition: 200ms ease;
@@ -73,10 +73,9 @@
 }
 
 .berry-hunt-button:hover, .berry-hunt-button:focus {
-	padding: 10px 16px 6px;
+	padding: 7px 15px 3px;
 	background: var(--berry-pink-dark);
 	border-color: var(--berry-pink);
-
 }
 
 #berry-hunt-container {
@@ -356,10 +355,6 @@
 	background-image: url(img/gameimg/slide15.png);
 }
 
-#berry-hunt-wrap.slide16 #berry-hunt-container {
-	background-image: url(img/gameimg/slide16.png);
-}
-
 #berry-hunt-wrap.slide17 #berry-hunt-container {
 	background-image: url(img/gameimg/slide17.png);
 }
@@ -372,7 +367,7 @@
 	background-image: url(img/gameimg/slide19.png);
 }
 
-#berry-hunt-wrap.slide20 #berry-hunt-container {
+#berry-hunt-wrap.slide20 #berry-hunt-container, #berry-hunt-wrap.slide16 #berry-hunt-container {
 	background-image: url(img/gameimg/slide20.png);
 }
 
@@ -388,11 +383,11 @@
 	background-image: url(img/gameimg/slide25.jpg);
 }
 
-#berry-hunt-wrap.slide26 #berry-hunt-container {
+#berry-hunt-wrap.slide26 #berry-hunt-container  {
 	background-image: url(img/gameimg/slide26.png);
 }
 
-#berry-hunt-wrap.slide28 #berry-hunt-container {
+#berry-hunt-wrap.slide28 #berry-hunt-container  {
 	background-image: url(img/gameimg/slide28.png);
 }
 
