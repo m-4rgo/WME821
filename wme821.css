@@ -461,6 +461,11 @@ ul, li {
     align-items: stretch;
 }
 
+#song-poem p {
+	margin: 0 5px;
+	text-indent: 0;
+}
+
 .texbox h1, .texbox h2, .texbox h3, .info-block h1, .info-block h2, .info-block h3, .info-row h1, .info-row h2, .info-row h3, .info-column h1, .info-column h2, .info-column h3 {
 	text-align: inherit;
 }
