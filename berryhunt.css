@@ -3,6 +3,7 @@
 }
 
 #berry-hunt-container {
+	background-color: #e2d6c1;
 	background-image: url("img/gameimg/initial.png");
 	background-size: cover;
 	background-position: center center;
