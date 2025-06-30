@@ -356,7 +356,7 @@
 	background-image: url(img/gameimg/slide15.png);
 }
 
-#berry-hunt-wrap.slide17 #berry-hunt-container {
+#berry-hunt-wrap.slide17 #berry-hunt-container, #berry-hunt-wrap.slide18 #berry-hunt-container, #berry-hunt-wrap.slide19 #berry-hunt-container {
 	background-image: url(img/gameimg/slide17.png);
 }
 
