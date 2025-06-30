@@ -24,6 +24,7 @@ body {
 	color: var(--text);
 	font-family: "Winky Sans", sans-serif;
 	background-size: 550px;
+	background-position: top center;
 }
 
 h1, h2, h3 {
