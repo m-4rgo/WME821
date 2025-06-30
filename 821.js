@@ -2,8 +2,10 @@
 //this toggles visibility for the image and the text
 function changePane(title) {
   var mainpanel = document.getElementById('berry-hunt-wrap');
+  var berryText = document.querySelector(".berry-hunt-textbox");
 
   mainpanel.className = title;
+  berryText.scrollTop = 0
 
   //this hides buttons that have been clicked already, to prevent loops (may not be needed depending on plot) (commented out for now)
   //event.target.classList.add("hidden");
