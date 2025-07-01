@@ -230,7 +230,7 @@
 #berry-hunt-wrap .slide28,
 #berry-hunt-wrap .fail,
 #berry-hunt-wrap .success,
-#berry-hunt-wrap .perfect  {
+#berry-hunt-wrap .perfect {
 	display: none;
 }
 
@@ -314,6 +314,10 @@
 #berry-hunt-wrap.success #berry-hunt-container.violets img.violets,
 #berry-hunt-wrap.perfect #berry-hunt-container.violets img.violets {
 	display: block;
+}
+
+#berry-hunt-container:not(.bird) .birdpic {
+	display: none;
 }
 
 #berry-hunt-wrap.slide1 #berry-hunt-container {
