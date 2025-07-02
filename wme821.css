@@ -560,6 +560,15 @@ ul, li {
 	border: none;
 }
 
+.likedislike {
+	flex-grow: 1;
+	margin: 10px;
+}
+
+.info-row.likedislike {
+	margin: 10px 0;
+}
+
 .inventory-item {
 	border: 2px solid #786148;
 	display: flex;
